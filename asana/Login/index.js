@@ -1,6 +1,11 @@
 import { Selector } from 'testcafe'
 import Login from "../Pages/Login.js";
 
+
+import credentials from "../../environment.json";
+
+
+
 fixture `Login`
     .page `https://app.asana.com/-/login`;
     
@@ -8,8 +13,8 @@ fixture `Login`
 
     test('Login', async t => {
         await t
-            .typeText(Login.emailAddressInput, 'ui.automation2021@gmail.com')
-            .typeText(Login.passwrodInput, 'Automation1234')
+            .typeText(Login.emailAddressInput, Login.email)
+            .typeText(Login.passwrodInput, Login.password)
             .click(loginBtn)
             .expect(Selector('.TopbarPageHeaderStructure-title').innerText).eql('Home')
 
