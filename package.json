@@ -1,12 +1,21 @@
 {
   "name": "test-cafe",
   "version": "1.0.0",
-  "description": "",
+  "description": "Testcafe end to end testing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run Login"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "end2end",
+    "testing",
+    "ui-automation",
+    "javascript",
+    "jest"
+  ],
+  "author": "Wiltrouble",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
