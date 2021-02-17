@@ -4,4 +4,4 @@
 yarn.lock
 package-lock.json
 .npmrc
-environment.json
+credentials.json

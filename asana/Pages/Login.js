@@ -1,6 +1,6 @@
-import { Selector } from "testcafe";
+import { Selector, t } from "testcafe";
 
-import environment from "../../environment.json";
+import environment from "../../credentials.json";
 
 class Login {
     constructor() {
@@ -10,6 +10,12 @@ class Login {
         this.email = environment.credentials.member1.username;
         this.password = environment.credentials.member1.password;
     }
+
+    async submitEmail (username) {
+        await t.typeText(this.emailAddressInput, username)
+    }
+
+    submitPassword = async (password) => await t.typeText(this.passwrodInput, password);
 }
 
 export default new Login();
