@@ -1,14 +1,15 @@
 import { Selector } from 'testcafe'
+import Login from "../Pages/Login.js";
 
 fixture `Login`
     .page `https://app.asana.com/-/login`;
     
-    const loginBtn = await Selector('.LoginEmailPasswordForm-logInButton')
+    const loginBtn = Selector('.LoginEmailPasswordForm-logInButton')
 
     test('Login', async t => {
         await t
-            .typeText('.LoginEmailPasswordForm-emailInput', 'ui.automation2021@gmail.com')
-            .typeText('.LoginEmailPasswordForm-passwordInput', 'Automation1234')
+            .typeText(Login.emailAddressInput, 'ui.automation2021@gmail.com')
+            .typeText(Login.passwrodInput, 'Automation1234')
             .click(loginBtn)
             .expect(Selector('.TopbarPageHeaderStructure-title').innerText).eql('Home')
 
