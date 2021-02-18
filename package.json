@@ -1,21 +1,9 @@
 {
   "name": "gherkin-testcafe",
   "version": "2.5.1",
-  "author": "Lukas Kullmann <lukas.kullmann@kiwigrid.com>",
+  "author": "wiltrouble",
   "contributors": [
-    "Wilhelm Behncke <behncke@sitegeist.de>",
-    "Jarmo Koivisto",
-    "Jakob Ström",
-    "Jussi Mullo",
-    "Mert Susur",
-    "Matthew Mangion",
-    "Danilo Cestari <danilofcestari@gmail.com>",
-    "Arthur Warnier"
   ],
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
   "license": "MIT",
   "keywords": [
     "gherkin",
