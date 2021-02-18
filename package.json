@@ -1,9 +1,21 @@
 {
   "name": "gherkin-testcafe",
   "version": "2.5.1",
-  "author": "wiltrouble",
+  "author": "Lukas Kullmann <lukas.kullmann@kiwigrid.com>",
   "contributors": [
+    "Wilhelm Behncke <behncke@sitegeist.de>",
+    "Jarmo Koivisto",
+    "Jakob Ström",
+    "Jussi Mullo",
+    "Mert Susur",
+    "Matthew Mangion",
+    "Danilo Cestari <danilofcestari@gmail.com>",
+    "Arthur Warnier"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiwigrid/gherkin-testcafe"
+  },
   "license": "MIT",
   "keywords": [
     "gherkin",
@@ -26,8 +38,7 @@
     "prettier-check": "prettier --list-different 'src/**/*.{js,yaml,yml,json,md}'",
     "google-example": "node main.js chrome examples/google.ts ./examples/google.feature",
     "datatable-example": "node main.js chrome ./examples/datatable.js ./examples/datatable.feature",
-    "custom-param-type-example": "node main.js chrome examples/google.ts ./examples/custom-param-type.js ./examples/custom-param-type.feature --param-type-registry-file ./examples/custom-param-type-registry.js",
-    "login": "node main.js chrome asana/e2e/login/loginSteps.js ./asana/features/login.feature"
+    "custom-param-type-example": "node main.js chrome examples/google.ts ./examples/custom-param-type.js ./examples/custom-param-type.feature --param-type-registry-file ./examples/custom-param-type-registry.js"
   },
   "dependencies": {
     "gherkin": "^8.1.1"
