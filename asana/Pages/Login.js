@@ -1,4 +1,4 @@
-import { Selector, t } from "testcafe";
+import { Selector, t } from "../e2e/Login/node_modules/testcafe";
 
 import environment from "../../credentials.json";
 
@@ -7,8 +7,8 @@ class Login {
         this.loginButton = Selector('.LoginEmailPasswordForm-logInButton');
         this.emailAddressInput = Selector('.LoginEmailPasswordForm-emailInput');
         this.passwrodInput = Selector('.LoginEmailPasswordForm-passwordInput');
-        this.email = environment.credentials.member1.username;
-        this.password = environment.credentials.member1.password;
+        this.e = environment.credentials.member1.username;
+        this.p = environment.credentials.member1.password;
     }
 
     async submitEmail (username) {
@@ -16,6 +16,8 @@ class Login {
     }
 
     submitPassword = async (password) => await t.typeText(this.passwrodInput, password);
+
+    clickLoginButton = async () => await t.click(this.loginButton);
 }
 
 export default new Login();

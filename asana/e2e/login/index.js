@@ -1,5 +1,5 @@
 import { Selector } from 'testcafe'
-import Login from "../Pages/Login.js";
+import Login from "../../Pages/Login.js";
 
 
 import credentials from "../../environment.json";
@@ -27,8 +27,3 @@ fixture `Login`
             .expect(Selector('.MessageBanner-contents').innerText).eql('El nombre de usuario o contraseña son incorrectos.\n\n¿Olvidaste tu contraseña?')
         
     });
-
-
-    // const getLoginErrorMessage = async () => {
-    //     await Selector('.MessageBanner-contents').contain("El nombre de usuario o contraseña son incorrectos.")
-    // }
