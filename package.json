@@ -1,20 +1,13 @@
 {
   "name": "gherkin-testcafe",
-  "version": "2.5.1",
-  "author": "Lukas Kullmann <lukas.kullmann@kiwigrid.com>",
+  "version": "0.0.1",
+  "author": "wiltrouble@gmail.com>",
   "contributors": [
-    "Wilhelm Behncke <behncke@sitegeist.de>",
-    "Jarmo Koivisto",
-    "Jakob Ström",
-    "Jussi Mullo",
-    "Mert Susur",
-    "Matthew Mangion",
-    "Danilo Cestari <danilofcestari@gmail.com>",
-    "Arthur Warnier"
+    "wilson"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kiwigrid/gherkin-testcafe"
+    "url": "https://github.com/wiltrouble/testcafe-asana"
   },
   "license": "MIT",
   "keywords": [
